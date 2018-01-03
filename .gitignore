@@ -1,0 +1,8 @@
+# C++
+cpp/*/build
+cpp/*/CMakeLists.txt
+
+# C#
+csharp/*/bin
+csharp/*/obj
+csharp/*/*.csproj
