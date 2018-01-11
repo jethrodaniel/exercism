@@ -1,13 +1,12 @@
 class Phrase
   def initialize(text)
-    # Default value for any key added is 0
-    @words = Hash.new(0)
-
-    # Find each word (except single-quoted words) and increment its value
-    text.scan(/[[:alnum:]]+(?:'[[:alnum:]]+)*/) { |w| @words[w.downcase] += 1 }
+    @text = text
   end
 
   def word_count
-    @words
+    # Count each word or number
+    @words = Hash.new(0).tap do |words|
+      @text.scan(/\b['[[:alnum:]]]+\b/) { |w| words[w.downcase] += 1 }
+    end
   end
 end
