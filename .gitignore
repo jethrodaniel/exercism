@@ -6,3 +6,4 @@ cpp/*/CMakeLists.txt
 csharp/*/bin
 csharp/*/obj
 csharp/*/*.csproj
+csharp/*/.vscode*
