@@ -5,8 +5,7 @@ class Phrase
 
   def word_count
     # Count each word or number
-    @words = Hash.new(0).tap do |words|
-      @text.scan(/\b['[[:alnum:]]]+\b/) { |w| words[w.downcase] += 1 }
-    end
+    @text.scan(/\b['\w]+\b/)
+         .each_with_object(Hash.new(0)) { |w, words| words[w.downcase] += 1 }
   end
 end
