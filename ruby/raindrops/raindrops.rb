@@ -15,6 +15,6 @@ class Raindrops
       rain_speak = n.to_s
     end
 
-    return rain_speak
+    rain_speak
   end
 end
