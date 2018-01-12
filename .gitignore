@@ -7,3 +7,7 @@ csharp/*/bin
 csharp/*/obj
 csharp/*/*.csproj
 csharp/*/.vscode*
+
+# Jave
+java/*/.gradle
+java/*/build*
