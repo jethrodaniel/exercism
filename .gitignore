@@ -11,3 +11,4 @@ csharp/*/.vscode*
 # Jave
 java/*/.gradle
 java/*/build*
+.gradle/
