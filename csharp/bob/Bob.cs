@@ -15,21 +15,22 @@ public static class Bob
         {
             return "Fine. Be that way!";
         }
-        else if (IsYelling(statement) && IsAsking(statement))
+        
+        if (IsYelling(statement) && IsAsking(statement))
         {
             return "Calm down, I know what I'm doing!";
         }
-        else if (IsYelling(statement))
+        
+        if (IsYelling(statement))
         {
             return "Whoa, chill out!";
         }
-        else if (IsAsking(statement))
+        
+        if (IsAsking(statement))
         {
             return "Sure.";
         }
-        else
-        {
-            return "Whatever.";
-        }
+        
+        return "Whatever.";
     }
 }
