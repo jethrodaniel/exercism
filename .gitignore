@@ -1,3 +1,6 @@
+# All
+*.vscode*
+
 # C++
 cpp/*/build
 cpp/*/CMakeLists.txt
@@ -6,9 +9,8 @@ cpp/*/CMakeLists.txt
 csharp/*/bin
 csharp/*/obj
 csharp/*/*.csproj
-csharp/*/.vscode*
 
-# Jave
+# Java
 java/*/.gradle
 java/*/build*
 .gradle/
