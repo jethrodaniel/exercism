@@ -1,9 +1,11 @@
 class SumOfMultiples
-  def initialize(*multiples)
-    @multiples = multiples
+  def initialize(*divs)
+    @divs = divs
   end
 
   def to(stop)
-    (1...stop).sum { |n| @multiples.any? { |x| n % x == 0 } ? n : 0 }
+    @divs.each_with_object([]) do |div, multiples|
+      multiples.push *(div...stop).step(div)
+    end.uniq.sum
   end
 end
