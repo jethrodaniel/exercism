@@ -1,17 +1,17 @@
 class School  
   def initialize
-    @db = Hash.new { |h, k| h[k] = [] }
+    @grade_levels = Hash.new { |h, k| h[k] = [] }
   end
   
   def add(student, grade)
-    @db[grade].push(student).sort!
+    @grade_levels[grade].push(student).sort!
   end
 
   def students(grade)
-    @db[grade]
+    @grade_levels[grade]
   end
 
   def students_by_grade
-    @db.sort.map { |k, v| { grade: k, students: v } }
+    @grade_levels.sort.map { |k, v| { grade: k, students: v } }.dup
   end
 end
