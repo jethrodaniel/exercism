@@ -2,22 +2,21 @@
 *.vscode*
 
 # C++
-cpp/*/build
-cpp/*/CMakeLists.txt
+cpp/**/build
 
 # C#
-csharp/*/bin
-csharp/*/obj
-csharp/*/*.csproj
+csharp/**/bin
+csharp/**/obj
+csharp/**/*.csproj
 
 # Java
-java/*/.gradle
-java/*/build*
+java/**/.gradle
+java/**/build*
 .gradle/
 
 # Kotlin
-kotlin/*/build
-kotlin/*/gradle*
-kotlin/*/.idea
-kotlin/*/local.properties
-
+kotlin/**/build
+kotlin/**/gradle*
+kotlin/**/.idea
+kotlin/**/local.properties
+kotlin/**/.keep
