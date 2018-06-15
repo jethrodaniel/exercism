@@ -17,6 +17,7 @@ java/*/build*
 
 # Kotlin
 kotlin/*/build
-kotlin/*/gradle
+kotlin/*/gradle*
 kotlin/*/.idea
+kotlin/*/local.properties
 
