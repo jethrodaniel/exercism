@@ -14,3 +14,9 @@ csharp/*/*.csproj
 java/*/.gradle
 java/*/build*
 .gradle/
+
+# Kotlin
+kotlin/*/build
+kotlin/*/gradle
+kotlin/*/.idea
+
