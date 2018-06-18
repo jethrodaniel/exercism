@@ -7,5 +7,5 @@ namespace gigasecond {
 boost::posix_time::ptime advance(boost::posix_time::ptime time) {
     return time + boost::posix_time::seconds(std::pow(10, 9));
 }
-	
-}
+
+} // namespace gigasecond
