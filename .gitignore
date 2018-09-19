@@ -1,6 +1,9 @@
 # All
 *.vscode*
 
+# C
+*tests.out
+
 # C++
 cpp/**/build
 
