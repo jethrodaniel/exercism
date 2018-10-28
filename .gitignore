@@ -15,7 +15,7 @@ csharp/**/*.csproj
 # Java
 java/**/.gradle
 java/**/build
-.gradle/
+java/**/.gradle/
 
 # Kotlin
 kotlin/**/build
@@ -24,8 +24,9 @@ kotlin/**/.idea
 kotlin/**/local.properties
 kotlin/**/.keep
 
-# Haskall
-.stack-work
+# Haskell
+haskell/**/.stack-work
+haskell/**/*.cabal
 
 #
 **/*.solution.json
