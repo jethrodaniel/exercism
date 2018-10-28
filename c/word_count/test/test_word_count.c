@@ -1,7 +1,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../../unity/unity.h"
+#include "../../Unity/src/unity.h"
 #include "../src/word_count.h"
 
 #define STRING_SIZE (MAX_WORD_LENGTH + 1)

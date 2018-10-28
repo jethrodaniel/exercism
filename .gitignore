@@ -23,3 +23,9 @@ kotlin/**/gradle*
 kotlin/**/.idea
 kotlin/**/local.properties
 kotlin/**/.keep
+
+# Haskall
+.stack-work
+
+#
+**/*.solution.json
