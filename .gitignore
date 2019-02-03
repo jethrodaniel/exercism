@@ -4,29 +4,25 @@
 # C
 *tests.out
 
-# C++
 cpp/**/build
 
-# C#
 csharp/**/bin
 csharp/**/obj
 csharp/**/*.csproj
 
-# Java
 java/**/.gradle
 java/**/build
 java/**/.gradle/
 
-# Kotlin
+javascript/**/node_modules
+
 kotlin/**/build
 kotlin/**/gradle*
 kotlin/**/.idea
 kotlin/**/local.properties
 kotlin/**/.keep
 
-# Haskell
 haskell/**/.stack-work
 haskell/**/*.cabal
 
-#
 **/*.solution.json
