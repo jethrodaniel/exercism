@@ -1,7 +1,6 @@
 # All
 *.vscode*
 
-# C
 *tests.out
 
 cpp/**/build
@@ -26,3 +25,5 @@ haskell/**/.stack-work
 haskell/**/*.cabal
 
 **/*.solution.json
+
+*/**/__pycache__
