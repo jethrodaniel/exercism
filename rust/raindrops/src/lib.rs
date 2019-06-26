@@ -1,11 +1,3 @@
-// Outputs an onomatopoeia, or the given number, depending on its factors.
-//
-// - If the number has 3 as a factor, outputs 'Pling'.
-// - If the number has 5 as a factor, outputs 'Plang'.
-// - If the number has 7 as a factor, outputs 'Plong'.
-// - If the number does not have 3, 5, or 7 as a factor,
-//   just returns the number's digits.
-//
 pub fn raindrops(n: u32) -> String {
     let mut raindrop = String::new();
 
