@@ -2,7 +2,7 @@
 //
 //   Tile (s):   1   2   3   4   5   6   ...   s
 //   Grains  :   1   2   4   8   16  32  ...   2^(s - 1)
-
+//
 pub fn square(s: u32) -> u64 {
     if s < 1 || s > 64 {
         panic!("Square must be between 1 and 64")
@@ -21,6 +21,7 @@ pub fn square(s: u32) -> u64 {
 //                         64
 //                   = 1 +  ∑  2^(n - 1)
 //                         i=1
+//
 pub fn total() -> u64 {
     (1..64 + 1).fold(0, |sum, n| sum + square(n))
 }
