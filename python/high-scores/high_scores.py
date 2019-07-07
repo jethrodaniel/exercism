@@ -1,22 +1,21 @@
-class HighScores(object):
-    def __init__(self, scores):
-        self.scores = scores
+def latest(scores):
+    return scores[-1]
 
-    def latest(self):
-        return self.scores[-1]
 
-    def personal_best(self):
-        return max(self.scores)
+def personal_best(scores):
+    return max(scores)
 
-    def personal_top(self):
-        return sorted(self.scores, reverse=True)[:3]
 
-    def report(self):
-        if self.latest() is self.personal_best():
-            return f"Your latest score was {self.latest()}." \
-                   f" That's your personal best!"
-        else:
-            delta = self.personal_best() - self.latest()
+def personal_top_three(scores):
+    return sorted(scores, reverse=True)[:3]
 
-            return f"Your latest score was {self.latest()}." \
-                   f" That's {delta} short of your personal best!"
+
+def report(scores):
+    if latest(scores) is personal_best(scores):
+        return f"Your latest score was {latest(scores)}." \
+               f" That's your personal best!"
+    else:
+        delta = personal_best(scores) - latest(scores)
+
+        return f"Your latest score was {latest(scores)}." \
+               f" That's {delta} short of your personal best!"
