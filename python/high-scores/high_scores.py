@@ -9,7 +9,7 @@ class HighScores(object):
         return max(self.scores)
 
     def personal_top(self):
-        return sorted(self.scores, reverse=True)[0:3]
+        return sorted(self.scores, reverse=True)[:3]
 
     def report(self):
         if self.latest() is self.personal_best():
@@ -17,5 +17,6 @@ class HighScores(object):
                    f" That's your personal best!"
         else:
             delta = self.personal_best() - self.latest()
+
             return f"Your latest score was {self.latest()}." \
                    f" That's {delta} short of your personal best!"
