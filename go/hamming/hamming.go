@@ -16,7 +16,7 @@ import (
 //
 func Distance(a, b string) (int, error) {
 	if len(a) != len(b) {
-		return 0, errors.New(fmt.Sprintf("Distance(%q, %q); expected error, got nil.", len(a), len(b)))
+		return 0, errors.New(fmt.Sprintf("distance(%q, %q): expected error, got nil", len(a), len(b)))
 	}
 
 	differences := 0
