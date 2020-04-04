@@ -1,10 +1,7 @@
 // Compute hamming distance of two strings
 package hamming
 
-import (
-	"errors"
-	"fmt"
-)
+import "fmt"
 
 // Compute hamming distance of two strings.
 //
@@ -16,7 +13,7 @@ import (
 //
 func Distance(a, b string) (int, error) {
 	if len(a) != len(b) {
-		return 0, errors.New(fmt.Sprintf("distance(%q, %q): expected error, got nil", len(a), len(b)))
+		return 0, fmt.Errorf("distance(%q, %q): expected error, got nil", len(a), len(b))
 	}
 
 	differences := 0
